@@ -1,0 +1,26 @@
+/* 2-style.css - Définition des couleurs */
+
+/* Définir la couleur du texte pour le body */
+body {
+    color: #161616;
+}
+
+/* Définir la couleur du texte pour tous les liens */
+a {
+    color: #161616;
+}
+
+/* Masquer les éléments avec la classe visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Définir la couleur du texte pour les éléments ayant la classe card-category */
+.card-category {
+    color: #D73953;
+}
+
+/* Définir la couleur du texte pour les éléments ayant la classe section-tagline */
+.section-tagline {
+    color: #D73953;
+}
