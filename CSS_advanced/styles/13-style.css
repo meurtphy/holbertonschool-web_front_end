@@ -1,18 +1,118 @@
-a[href] {
-    color: var(--text-color);
+/* Importation de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap');
+
+/* Définition des variables CSS */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    /* Variables pour les polices */
+    --font-family-base: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* Variables pour les tailles de police */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Variables pour l'épaisseur de police */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Variables pour l'espacement des lignes */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /* Variables pour l'alignement et transformation */
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+
+    /* Nouvelles variables pour le titre de section */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
 }
 
-/* État : Visité */
+/* Réduction de la taille de la police pour l'élément HTML */
+html {
+    font-size: 62.5%;
+}
+
+/* Application de la taille, de l'épaisseur et de l'espacement des lignes pour le body */
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+/* Style des liens (suppression des décorations) */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Cacher les éléments visuellement cachés */
+.visually-hidden {
+    display: none;
+}
+
+/* Application des couleurs */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Ajout des styles pour .section-title */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+/* Ajout des styles pour .section-tagline */
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Centrage des titres de section */
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+/* Application de la police, du poids et de l'espacement des lignes pour les titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+/* Sélectionne uniquement les liens contenant un href */
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Lien visité : italique */
 a[href]:visited {
     font-style: italic;
 }
 
-/* État : Survolé */
+/* Lien survolé : souligné */
 a[href]:hover {
     text-decoration: underline;
 }
 
-/* État : Actif */
+/* Lien actif : couleur de fond */
 a[href]:active {
     background-color: var(--color-light-grey);
 }
