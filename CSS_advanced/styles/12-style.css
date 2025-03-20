@@ -53,46 +53,24 @@ body {
     line-height: var(--line-height-base);
 }
 
-/* Style des liens (suppression des décorations) */
-a {
+/* Style des liens contenant un href */
+a[href] {
     color: var(--text-color);
     text-decoration: none;
 }
 
-/* Cacher les éléments visuellement cachés */
-.visually-hidden {
-    display: none;
+/* Lien visité : italique */
+a[href]:visited {
+    font-style: italic;
+    color: inherit;
 }
 
-/* Application des couleurs */
-.card-category {
-    color: var(--color-primary);
+/* Lien survolé : souligné */
+a[href]:hover {
+    text-decoration: underline;
 }
 
-/* Ajout des styles pour .section-title */
-.section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
-}
-
-/* Ajout des styles pour .section-tagline */
-.section-tagline {
-    color: var(--color-primary);
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-}
-
-/* Centrage des titres de section */
-.section-header {
-    text-align: var(--section-header-align);
-}
-
-/* Application de la police, du poids et de l'espacement des lignes pour les titres */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
+/* Lien actif : fond coloré */
+a[href]:active {
+    background-color: var(--color-light-grey);
 }
