@@ -1,0 +1,18 @@
+a[href] {
+    color: var(--text-color);
+}
+
+/* État : Visité */
+a[href]:visited {
+    font-style: italic;
+}
+
+/* État : Survolé */
+a[href]:hover {
+    text-decoration: underline;
+}
+
+/* État : Actif */
+a[href]:active {
+    background-color: var(--color-light-grey);
+}
