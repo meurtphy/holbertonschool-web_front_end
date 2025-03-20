@@ -1,0 +1,25 @@
+/* 26-style.css */
+
+/* Cible le conteneur de la testimonial et centre le texte */
+.card-testimonial {
+    text-align: center;
+  }
+
+  /* Cible l'avatar dans la testimonial :
+     - Arrondir les bords à 50% (pour obtenir un cercle)
+     - Fixer la largeur et la hauteur à 10x la taille de la racine (généralement 10rem) */
+  .card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  /* Cible le <cite> qui se trouve dans .card-quote à l'intérieur de .card-testimonial :
+     - Afficher en block
+     - Ajouter un padding-top équivalent à 1x la taille de la racine (1rem)
+     - La couleur du texte est celle définie dans la variable --color-primary */
+  .card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
+  }
