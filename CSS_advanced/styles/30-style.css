@@ -1,0 +1,78 @@
+/* 30-style.css */
+
+/* 1. Target card-outer within card-work: position relative et overflow hidden */
+.card-work .card-outer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 2. Target l'image dans card-image à l'intérieur de card-work :
+     - Hauteur : 30rem
+     - Largeur : 100%
+     - object-fit: cover
+     - Vertical-align: bottom */
+  .card-work .card-image img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+
+  /* 3. Target card-inner à l'intérieur de card-work :
+     - Position absolute
+     - Top, left et right à -0.1rem
+     - z-index à 1 */
+  .card-work .card-inner {
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    right: -0.1rem;
+    z-index: 1;
+  }
+
+  /* 4. Quand card-work est hover, card-inner obtient un fond semi-transparent */
+  .card-work:hover .card-inner {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* 5. Target card-title à l'intérieur de card-work :
+     - Centre le texte
+     - Supprime toutes les marges
+     - Définit l'opacité à sa valeur minimale (ici 0)
+     - Hauteur à 100%
+     - Position relative */
+  .card-work .card-title {
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    height: 100%;
+    position: relative;
+  }
+
+  /* 6. Target le lien à l'intérieur de card-title (et card-work) :
+     - Affiche en block
+     - Supprime toute décoration de texte
+     - Ajoute un padding-top de 45% */
+  .card-work .card-title a {
+    display: block;
+    text-decoration: none;
+    padding-top: 45%;
+    position: relative; /* Nécessaire pour le pseudo-élément */
+  }
+
+  /* 7. Crée un pseudo-élément ::after pour le lien à l'intérieur de card-title et card-work :
+     - Position absolute avec top, right, bottom et left à 0
+     - Aucun contenu */
+  .card-work .card-title a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* 8. Quand card-work est hover, card-title voit son opacité passer à 1 */
+  .card-work:hover .card-title {
+    opacity: 1;
+  }

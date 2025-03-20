@@ -1,0 +1,17 @@
+/* 31-style.css */
+
+/* Cibler le .card-quote à l'intérieur de .card-testimonial et le positionner relativement */
+.card-testimonial .card-quote {
+    position: relative;
+  }
+
+  /* Ajouter un pseudo-élément ::before pour afficher les guillemets */
+  .card-testimonial .card-quote::before {
+    content: "\201C";         /* Le caractère guillemet ouvrant */
+    position: absolute;
+    top: -4.5rem;             /* Position verticale */
+    left: -1rem;              /* Position horizontale */
+    color: #efeded;           /* Couleur du texte */
+    font-size: 10rem;         /* Taille de la police */
+    z-index: -1;              /* Placer derrière le contenu */
+  }
