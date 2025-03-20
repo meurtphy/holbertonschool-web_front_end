@@ -1,0 +1,21 @@
+/* 23-style.css */
+
+/* Fix issues for dark theme */
+
+/* Pour la classe .footer-address :
+   - Le texte adopte la couleur définie par la variable --text-color */
+   .footer-address {
+    color: var(--text-color);
+  }
+
+  /* Pour la classe .social-link :
+     - Affichage en block */
+  .social-link {
+    display: block;
+  }
+
+  /* Pour les éléments SVG à l'intérieur de .social-link :
+     - Remplissage de la couleur avec la variable --text-color */
+  .social-link svg {
+    fill: var(--text-color);
+  }

@@ -1,0 +1,21 @@
+/* 24-style.css */
+
+/* Cible card-title à l'intérieur de .card-services et supprime toutes les marges */
+.card-services .card-title {
+    margin: 0;
+  }
+
+  /* Cible les liens <a> à l'intérieur de .card-services */
+  .card-services a {
+    display: block;                 /* Affiche les liens en tant que block */
+    padding: 2rem;                  /* Padding égal à 2x la taille de la racine */
+    background-color: var(--color-light-grey);
+    text-decoration: none;          /* Aucun soulignement par défaut */
+  }
+
+  /* État hover pour les liens <a> à l'intérieur de .card-services */
+  .card-services a:hover {
+    color: var(--color-white);      /* Couleur du texte en hover */
+    background-color: var(--color-primary); /* Couleur de fond en hover */
+    text-decoration: none;          /* Pas de décoration du texte en hover */
+  }
